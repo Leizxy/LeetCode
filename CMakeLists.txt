@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.17)
+project(LeetCode C)
+
+set(CMAKE_C_STANDARD 99)
+
+add_executable(main1 main.c)
+add_executable(14 leet14.c)
+add_executable(15 leet15.c)
