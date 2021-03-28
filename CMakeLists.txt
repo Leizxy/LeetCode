@@ -3,6 +3,9 @@ project(LeetCode C)
 
 set(CMAKE_C_STANDARD 99)
 
+#target_include_directories(/support/*)
+
+add_executable(demo /${CMAKE_SOURCE_DIR}/support/demo.c)
 add_executable(main1 main.c)
 add_executable(14 leet14.c)
 add_executable(15 leet15.c)
