@@ -5,7 +5,7 @@
  */
 #include <stdio.h>
 #include <malloc.h>
-#include "sortintarray.c"
+#include "support/sortintarray.c"
 
 int **threeSum(int *nums, int numsSize, int *returnSize, int **returnColumnSizes) {
     *returnSize = 0;

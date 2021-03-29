@@ -5,7 +5,7 @@
 
  */
 #include <stdio.h>
-#include "ListNode.c"
+#include "support/ListNode.c"
 
 struct ListNode *deleteDuplicates(struct ListNode *head) {
     if (head == NULL) {
