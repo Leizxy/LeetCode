@@ -6,13 +6,13 @@ struct ListNode {
 };
 
 struct ListNode *generate(int *ints, int size) {
-    static struct ListNode head;
+//    static struct ListNode head;
     static struct ListNode *ret;
-//    printf("generate node %d", head->val);
-    head.val = ints[0];
-    ret = &head;
-//    printf("generate node %d\n", head.val);
-    int i = 1;
+    ret = (struct ListNode *) malloc(sizeof(struct ListNode));
+//    head.val = ints[0];
+//    ret = &head;
+    struct ListNode *head = ret;
+    int i = 0;
     while (i < size) {
         static struct ListNode *newNode;
         newNode = (struct ListNode *) malloc(sizeof(struct ListNode));
@@ -21,10 +21,8 @@ struct ListNode *generate(int *ints, int size) {
         ret->next = newNode;
         ret = newNode;
         i++;
-//        printf("generate node %p\n", newNode);
-//        printf("generate node %d\n", newNode->val);
     }
-    return &head;
+    return head->next;
 }
 
 char *printNode(struct ListNode *pNode) {

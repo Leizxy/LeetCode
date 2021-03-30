@@ -62,7 +62,7 @@ int findPos(int data[], int low, int high) {
 void quickSort(int data[], int low, int high) {
     if (low > high) return;
     int pos = findPos(data, low, high);
-    printf("pos %d : \n", pos);
+//    printf("pos %d : \n", pos);
     quickSort(data, low, pos - 1);
     quickSort(data, pos + 1, high);
 }
