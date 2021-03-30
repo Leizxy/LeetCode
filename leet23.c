@@ -26,9 +26,16 @@ struct ListNode *mergeKLists(struct ListNode **lists, int listsSize) {
     if (listsSize == 1) {
         return lists[0];
     }
-    struct ListNode *ret=NULL;
-    for (int i = 0; i < listsSize; ++i) {
+    struct ListNode *ret = NULL;
+    /*for (int i = 0; i < listsSize; ++i) {
         ret = mergeTwoLists1(ret, lists[i]);
+    }*/
+    int i = 0;
+    while (i < listsSize) {
+        if (lists[i]!=NULL){
+            ret = mergeTwoLists1(ret,lists[i]);
+        }
+        i++;
     }
     return ret;
 }
