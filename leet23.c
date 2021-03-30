@@ -5,8 +5,32 @@
 #include <stdio.h>
 #include "support/ListNode.c"
 
-struct ListNode *mergeKLists(struct ListNode **lists, int listsSize) {
+struct ListNode *mergeTwoLists1(struct ListNode *l1, struct ListNode *l2) {
+    if (l1 == NULL) {
+        return l2;
+    } else if (l2 == NULL) {
+        return l1;
+    } else if (l1->val < l2->val) {
+        l1->next = mergeTwoLists1(l1->next, l2);
+        return l1;
+    } else {
+        l2->next = mergeTwoLists1(l1, l2->next);
+        return l2;
+    }
+}
 
+struct ListNode *mergeKLists(struct ListNode **lists, int listsSize) {
+    if (listsSize == 0) {
+        return NULL;
+    }
+    if (listsSize == 1) {
+        return lists[0];
+    }
+    struct ListNode *ret=NULL;
+    for (int i = 0; i < listsSize; ++i) {
+        ret = mergeTwoLists1(ret, lists[i]);
+    }
+    return ret;
 }
 
 int main() {
