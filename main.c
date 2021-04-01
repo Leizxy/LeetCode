@@ -25,5 +25,7 @@ int main() {
 //    printf("%d\n", isMatch("mississippi", "mis*is*p*."));
 
 //    test();
+
+
     return 0;
 }
