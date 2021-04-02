@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <minmax.h>
 #include <math.h>
-#include "support/sortintarray.c"
+#include "../support/sortintarray.c"
 
 int threeSumClosest(int *nums, int numsSize, int target) {
     if (numsSize == 3) {

@@ -8,7 +8,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <mem.h>
-#include "support/sortintarray.c"
+#include "../support/sortintarray.c"
 
 
 int findRow(int **matrix, int size, int target) {

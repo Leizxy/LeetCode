@@ -3,7 +3,7 @@
  * 新链表是通过拼接给定的两个链表的所有节点组成的。
  */
 #include <stdio.h>
-#include "support/ListNode.c"
+#include "../support/ListNode.c"
 
 //递归
 struct ListNode *mergeTwoLists1(struct ListNode *l1, struct ListNode *l2) {

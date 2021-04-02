@@ -2,7 +2,7 @@
  * 给你一个链表，删除链表的倒数第 n 个结点，并且返回链表的头结点。
  */
 #include <stdio.h>
-#include "support/ListNode.c"
+#include "../support/ListNode.c"
 
 struct ListNode *removeNthFromEnd(struct ListNode *head, int n) {
     if (head->next == NULL && n == 1) {

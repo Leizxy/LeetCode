@@ -1,6 +1,6 @@
 #include <stdio.h>
 //#include "Leet8.c"
-#include "Leet10.c"
+#include "q1-50/Leet10.c"
 //#include "test.c"
 
 int main() {

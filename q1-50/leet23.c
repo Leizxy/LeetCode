@@ -3,7 +3,7 @@
  * 请你将所有链表合并到一个升序链表中，返回合并后的链表。
  */
 #include <stdio.h>
-#include "support/ListNode.c"
+#include "../support/ListNode.c"
 
 struct ListNode *mergeTwoLists1(struct ListNode *l1, struct ListNode *l2) {
     if (l1 == NULL) {
